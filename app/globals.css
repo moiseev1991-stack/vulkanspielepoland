@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #0a0008;
+  --foreground: #ffffff;
+}
+
+body {
+  color: var(--foreground);
+  background:
+    radial-gradient(ellipse 118% 58% at 50% 0%, #240015 0%, #0e0008 48%, #050004 100%);
+  font-family: 'Inter', sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* ── Tile: pulsing aura ─────────────────────────────────── */
+@keyframes tile-pulse-aura {
+  0%, 100% { box-shadow: 0 2px 14px rgba(140,0,32,0.14); }
+  50%       { box-shadow: 0 4px 32px rgba(210,0,55,0.55), 0 0 18px rgba(255,40,80,0.22); }
+}
+
+/* ── Tile: diagonal glance sweep ────────────────────────── */
+@keyframes tile-glance-sweep {
+  0%, 5%    { transform: skewX(-14deg) translateX(-130%); }
+  20%, 100% { transform: skewX(-14deg) translateX(230%); }
+}
+
+.game-tile-aura {
+  animation: tile-pulse-aura 3.7s ease-in-out infinite;
+}
+
+.game-tile-glance {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 50%;
+  pointer-events: none;
+  z-index: 5;
+  background: linear-gradient(to right, transparent 0%, rgba(255,255,255,0.07) 50%, transparent 100%);
+  animation: tile-glance-sweep 5.2s ease-in-out infinite;
+}
+
+/* ── Hexagon clip-path utility ──────────────────────────── */
+.hex-clip {
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+
+/* ── Wheel of fortune: aurora background throb ──────────── */
+@keyframes aurora-throb {
+  0%, 100% { opacity: 0.07; }
+  50%       { opacity: 0.17; }
+}
+
+.wheel-aurora {
+  animation: aurora-throb 4.2s ease-in-out infinite;
+}

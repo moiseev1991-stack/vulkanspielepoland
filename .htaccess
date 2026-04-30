@@ -1,0 +1,10 @@
+Options -MultiViews
+RewriteEngine On
+RewriteBase /
+
+# Prevent loop — stop if already in /out/
+RewriteCond %{REQUEST_URI} ^/out/
+RewriteRule ^ - [L]
+
+# Route all requests transparently to out/
+RewriteRule ^(.*)$ out/$1 [L]

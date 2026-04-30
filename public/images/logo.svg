@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 60" width="220" height="60">
+  <!-- Volcano icon -->
+  <polygon points="30,10 45,40 15,40" fill="#CC0000"/>
+  <polygon points="30,18 38,35 22,35" fill="#FF4400"/>
+  <!-- Lava drops -->
+  <circle cx="26" cy="44" r="3" fill="#FFD700"/>
+  <circle cx="34" cy="46" r="2.5" fill="#FFD700"/>
+  <circle cx="30" cy="48" r="2" fill="#FFC107"/>
+  <!-- Text: VulkanSpiele -->
+  <text x="55" y="28" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF">Vulkan</text>
+  <text x="55" y="48" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#CC0000">Spiele</text>
+</svg>
