@@ -267,7 +267,7 @@ export default function PromotionsClient() {
             Kasyno
             <span className="ml-4 text-xs font-normal text-white/40">
               Chcesz grać bez wpłaty?{' '}
-              <a href="/bonus-bez-depozytu/" className="text-gold underline hover:text-yellow-300 transition">
+              <a href="/bonus/#bez-depozytu" className="text-gold underline hover:text-yellow-300 transition">
                 Bonus bez depozytu
               </a>
             </span>

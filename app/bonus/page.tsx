@@ -14,6 +14,7 @@ export const metadata: Metadata = {
 
 const offerList = [
   { title: 'Bonus powitalny', desc: '100% do 2 500 EUR + 350 FS na pierwsze cztery depozyty', badge: 'POWITALNY', value: '2 500 €' },
+  { title: 'Bonus bez depozytu', desc: '50 darmowych spinów po rejestracji — bez konieczności wpłaty', badge: 'BEZ DEPOZYTU', value: '50 FS' },
   { title: 'Cashback 10%', desc: 'Tygodniowy zwrot środków bez limitu — automatycznie co poniedziałek', badge: 'CASHBACK', value: '10%' },
   { title: 'Reload Friday', desc: 'Co piątek 50% do 200 EUR + 50 darmowych spinów', badge: 'RELOAD', value: '+50%' },
   { title: 'Bonus urodzinowy', desc: 'Specjalna niespodzianka w Twoje urodziny — kod aktywuje się automatycznie', badge: 'VIP', value: 'X' },

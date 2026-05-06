@@ -7,7 +7,7 @@ import { Bell, ChevronDown, Gift, Menu, Package, Sparkles, Star, Tag, Target, X,
 
 const dropdownLinks = [
   { label: 'Bonus',             href: '/bonus/',            Icon: Gift },
-  { label: 'Bonus bez Depozytu',href: '/bonus-bez-depozytu/',Icon: Zap },
+  { label: 'Bonus bez Depozytu',href: '/bonus/#bez-depozytu',Icon: Zap },
   { label: 'Darmowe Spiny',     href: '/darmowe-spiny/',    Icon: Sparkles },
   { label: 'Kod Promocyjny',    href: '/kod-promocyjny/',   Icon: Tag },
   { label: 'Skrzynki z łupami', href: '/lootboxes',         Icon: Package },

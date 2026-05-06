@@ -6,6 +6,10 @@ RewriteBase /
 RewriteCond %{HTTP_HOST} ^www\.vulkanspielepoland\.pl$ [NC]
 RewriteRule ^(.*)$ https://vulkanspielepoland.pl/$1 [R=301,L]
 
+# 301 redirect /bonus-bez-depozytu/ -> /bonus/ (consolidated page)
+RewriteRule ^bonus-bez-depozytu/?$ /bonus/ [R=301,L]
+RewriteRule ^bonus-bez-depozytu/(.*)$ /bonus/ [R=301,L]
+
 # Prevent loop — stop if already in /out/
 RewriteCond %{REQUEST_URI} ^/out/
 RewriteRule ^ - [L]
