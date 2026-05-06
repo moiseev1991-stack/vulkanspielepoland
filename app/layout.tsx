@@ -5,6 +5,8 @@ import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 import CookieBanner from '@/components/layout/CookieBanner'
 import MobileBottomNav from '@/components/layout/MobileBottomNav'
+import InternalJsonLd from '@/components/seo/InternalJsonLd'
+import HomeJsonLd from '@/components/seo/HomeJsonLd'
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter', display: 'swap' })
 
@@ -37,6 +39,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         {/* TODO: вставить свежий код после верификации vulkanspielepoland.pl в Google Search Console */}
         {/* <meta name="google-site-verification" content="" /> */}
+        <HomeJsonLd />
+        <InternalJsonLd />
       </head>
       <body className="bg-bgDark text-white antialiased font-sans min-h-screen flex flex-col">
         <Header />

@@ -3,11 +3,11 @@ import Link from 'next/link'
 import BonusesClient from './BonusesClient'
 
 export const metadata: Metadata = {
-  title: { absolute: 'Vulkan Spiele Bonus Bez Depozytu i Kody Promocyjne 2026' },
-  description: 'Aktualne bonusy Vulkan Spiele: 10€ bez depozytu, 88 darmowych spinów i kody promocyjne 2026. Sprawdź warunki obrotu, limity wypłat i jak aktywować każdą ofertę w polskim kasynie online.',
+  title: { absolute: 'Vulkan Spiele Bonusy 2026 — Powitalny, Cashback, Reload i VIP' },
+  description: 'Pełna lista bonusów Vulkan Spiele 2026: bonus powitalny do 2 500 €, cotygodniowy cashback 10%, Reload Friday, oferty VIP i bonus za polecenie. Porównaj warunki obrotu i wybierz najlepszą ofertę dla siebie.',
   openGraph: {
-    title: 'Vulkan Spiele Bonus Bez Depozytu i Kody Promocyjne 2026',
-    description: 'Aktualne bonusy Vulkan Spiele: 10€ bez depozytu, 88 darmowych spinów i kody promocyjne 2026. Sprawdź warunki obrotu, limity wypłat i jak aktywować każdą ofertę w polskim kasynie online.',
+    title: 'Vulkan Spiele Bonusy 2026 — Powitalny, Cashback, Reload i VIP',
+    description: 'Pełna lista bonusów Vulkan Spiele 2026: bonus powitalny do 2 500 €, cotygodniowy cashback 10%, Reload Friday, oferty VIP i bonus za polecenie. Porównaj warunki obrotu i wybierz najlepszą ofertę dla siebie.',
     url: 'https://vulkanspielepoland.pl/bonus/',
   },
 }
@@ -53,9 +53,9 @@ export default function BonusPage() {
             >
               🎁 BONUSY
             </span>
-            <h1 className="text-4xl font-black text-white mb-3">Vulkan Spiele Bonus: Kompletny Przewodnik po Kodach Promocyjnych 2026</h1>
+            <h1 className="text-4xl font-black text-white mb-3">Vulkan Spiele Bonusy 2026 — Powitalny, Cashback, Reload i VIP</h1>
             <p className="text-white/60 text-sm mb-6 max-w-md">
-              Odbierz ekskluzywne bonusy i zwiększ swoje szanse na wygraną. Nowe oferty każdego tygodnia!
+              Wszystkie aktywne promocje VulkanSpiele w jednym miejscu — od bonusu powitalnego do 2 500 € po cotygodniowy cashback i oferty dla VIP.
             </p>
             <Link
               href="#bonuses"
@@ -79,11 +79,11 @@ export default function BonusPage() {
             🎁 BONUSY
           </span>
           <h2 className="text-4xl font-black text-white mb-3">
-            Vulkan Spiele <span style={{ color: '#FFD700' }}>Bonus</span> Casino PL — Powitalny i Cashback
+            Wszystkie <span style={{ color: '#FFD700' }}>Bonusy</span> VulkanSpiele 2026 — Pełny Katalog Ofert
           </h2>
           <p className="text-gray-400 text-sm leading-relaxed">
-            Vulkan Spiele Bonus — powitalny pakiet do 2 500 EUR + 350 FS, cotygodniowy cashback
-            i sezonowe oferty dla polskich graczy w 2026 roku.
+            Sprawdź pełną listę aktualnych bonusów: powitalny pakiet do 2 500 € + 350 FS,
+            tygodniowy cashback 10%, Reload Friday, bonus urodzinowy, Highroller i program partnerski.
           </p>
         </div>
 

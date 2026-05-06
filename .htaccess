@@ -2,6 +2,10 @@ Options -MultiViews
 RewriteEngine On
 RewriteBase /
 
+# 301 redirect www -> non-www (canonical host)
+RewriteCond %{HTTP_HOST} ^www\.vulkanspielepoland\.pl$ [NC]
+RewriteRule ^(.*)$ https://vulkanspielepoland.pl/$1 [R=301,L]
+
 # Prevent loop — stop if already in /out/
 RewriteCond %{REQUEST_URI} ^/out/
 RewriteRule ^ - [L]
