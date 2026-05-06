@@ -31,14 +31,15 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+  verification: {
+    google: 'lWSjbcaiwwjBKt2UizTInX4kjq0l3HfzPNwvHkf_3Vs',
+  },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="pl" className={inter.variable}>
       <head>
-        {/* TODO: вставить свежий код после верификации vulkanspielepoland.pl в Google Search Console */}
-        {/* <meta name="google-site-verification" content="" /> */}
         <HomeJsonLd />
         <InternalJsonLd />
       </head>
